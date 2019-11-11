@@ -9,6 +9,11 @@ public class AccuracyDoubleFloat {
         float pi=3.14f, R=6371.2f;
         return 4/3*pi*R*R*R;
     }
+    public static double calculateAccuracy(double radius){
+        double a=volumeBallDouble(1);
+        float b=volumeBallFloat(1);
+        return (float)a-b;
+    }
 
     public static void main(String[] args) {
         double d=volumeBallDouble(1);
