@@ -16,10 +16,6 @@ public class AccuracyDoubleFloat {
     }
 
     public static void main(String[] args) {
-        double d=volumeBallDouble(1);
-        double d1=volumeBallFloat(1);
-        System.out.println(d);
-        System.out.println(d1);
-
+        
     }
 }
