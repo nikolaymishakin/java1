@@ -11,13 +11,13 @@ public class TriangleInfo {
         else return false;
     }
 
-    public static boolean islsoscelesTriangle(int a, int b, int c) {
+    public static boolean isIsoscelesTriangle(int a, int b, int c) {
         if (a == b || a == c || b == c) return true;
         else return false;
     }
 
     public static void main(String[] args) {
-        boolean a=islsoscelesTriangle(5,5,4);
+        boolean a=isIsoscelesTriangle(5,5,4);
         System.out.println(a);
 
     }
