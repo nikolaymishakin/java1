@@ -35,6 +35,7 @@ public class CyclesGoldenFibo {
             next=prev;
             prev=curr;
             System.out.println(curr);
+
         }
 
 
