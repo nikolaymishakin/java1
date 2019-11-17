@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.compare_if_cycles;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit){
-        if(number%10==digit|number/10==digit) return true;
+        if((double)number%10==digit|number/10==digit) return true;
         else return false;
     }
     public static int fiboNumber(int n){
