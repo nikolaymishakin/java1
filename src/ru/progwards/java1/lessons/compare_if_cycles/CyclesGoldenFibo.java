@@ -6,8 +6,8 @@ public class CyclesGoldenFibo {
         else return false;
     }
     public static int fiboNumber(int n){
-        int i=0,next=1, prev=0, curr=1;
-        for(;i<=n;i++){
+        int i,next=1, prev=1, curr=0;
+        for(i=0;i<=n;i++){
             curr=next+prev;
             next=prev;
             prev=curr;
@@ -26,17 +26,12 @@ public class CyclesGoldenFibo {
     }
 
     public static void main(String[] args) {
-        int curr=1,next=1,prev=0;
-        for(int i=0;i<15;i++) {
-            curr = next + prev;
-            next = prev;
-            prev = curr;
-
+        int n,a,curr,next=1,prev=1;
+        for(int i = 2; i<10; i++) {
+            curr=prev+next;
+            prev=next;
+            next=curr;
+            System.out.println(curr);
         }
-            boolean a=containsDigit(28,8);
-            System.out.println(a);
-
-
-
     }
 }
