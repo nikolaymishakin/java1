@@ -16,8 +16,6 @@ public class TriangleInfo {
         else return false;
     }
 
-}
-
     public static void main(String[] args) {
         boolean a=islsoscelesTriangle(5,5,4);
         System.out.println(a);
