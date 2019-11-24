@@ -13,16 +13,17 @@ public class CyclesGoldenFibo {
         return false;
     }
     public static int fiboNumber(int n){
-        int i,curr = 0,next=1,prev=1;
-        System.out.println(next);
-        System.out.println(prev);
+        int i,c = 0,a=1,b=1;
+        System.out.println(c);
+        System.out.println(a);
+        System.out.println(b);
         for(i=2;i<n;i++){
-            curr=next+prev;
-            next=prev;
-            prev=curr;
-           System.out.println(curr);
+            c=a+b;
+            a=b;
+            b=c;
+           System.out.println(c);
         }
-        return curr;
+        return c;
     }
     public static boolean isGoldenTriangle(int a,int b,int c){
         double d=(double)a/c,e=(double)a/b,f=(double)b/a;
@@ -33,7 +34,7 @@ public class CyclesGoldenFibo {
     }
 
     public static void main(String[] args) {
-        int a=fiboNumber(15);
+        int a=fiboNumber(5);
         boolean b=isGoldenTriangle(7000,7000,4325);
         System.out.println(b);
         }
