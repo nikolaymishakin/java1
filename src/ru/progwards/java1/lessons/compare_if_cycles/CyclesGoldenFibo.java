@@ -2,8 +2,8 @@ package ru.progwards.java1.lessons.compare_if_cycles;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
-        int i = 0, num = number,num1=num%10;
-        if(num1==digit) return true;
+        int i = 0, num = number,num1=0;
+        if(number%10==digit) return true;
          for(;i<5;i++){
             num/=10;
             num1=num%10;
@@ -13,7 +13,7 @@ public class CyclesGoldenFibo {
         return false;
     }
     public static int fiboNumber(int n){
-        int i,c = 0,a=1,b=1;
+        int i,c=0,a=1,b=1;
         System.out.print(a);
         System.out.print(b);
         for(i=2;i<n;i++){
@@ -33,7 +33,8 @@ public class CyclesGoldenFibo {
     }
 
     public static void main(String[] args) {
-        int a=fiboNumber(15);
+        boolean a=containsDigit(287,1);
+        System.out.println(a);
         }
     }
 
