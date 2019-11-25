@@ -14,14 +14,12 @@ public class CyclesGoldenFibo {
     }
 
     public static int fiboNumber(int n) {
-        int i, c=0 , a=1, b=0 ;
-        if (a == 1 ) { b=1;
-            System.out.println(a);
-            System.out.println(b); }
+        int i, c=0 , a=0, b=0 ;
+        if (c == 0 ) a=1;b=1;
         for (i = 1; i < n; i++) {
-            c = a + b;
             a = b;
             b = c;
+            c = a + b;
             System.out.println(c);
         }
         return c;
