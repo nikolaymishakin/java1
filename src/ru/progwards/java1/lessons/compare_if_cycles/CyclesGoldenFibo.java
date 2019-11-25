@@ -4,7 +4,7 @@ public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
         int i = 0, num = number, num1 = 0;
         if (number % 10 == digit) return true;
-        for (; i < number; i++) {
+        for (; i < num; i++) {
             num /= 10;
             num1 = num % 10;
             if (num1 == digit) return true;
@@ -15,7 +15,7 @@ public class CyclesGoldenFibo {
 
     public static int fiboNumber(int n) {
         int i, c = 0, a = 1, b = 1;
-        if (a == 1 && b == 1) {
+        if (a == 1 || b == 1) {
             System.out.print(a);
             System.out.print(b);
         }
@@ -37,8 +37,9 @@ public class CyclesGoldenFibo {
     }
 
     public static void main(String[] args) {
-        int a = fiboNumber(5);
-
+        boolean a=containsDigit(288,2);
+        System.out.println(a);
+       // int b=fiboNumber(15);
     }
 }
 
