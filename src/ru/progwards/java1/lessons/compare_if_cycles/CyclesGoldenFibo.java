@@ -4,7 +4,7 @@ public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
         int i = 0, num = number, num1 = 0;
         if (number % 10 == digit) return true;
-        for (; i < 5; i++) {
+        for (; i < number; i++) {
             num /= 10;
             num1 = num % 10;
             if (num1 == digit) return true;
