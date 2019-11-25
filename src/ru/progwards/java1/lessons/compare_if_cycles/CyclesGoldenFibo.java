@@ -15,8 +15,8 @@ public class CyclesGoldenFibo {
 
     public static int fiboNumber(int n) {
         int i, c=0 , a=0, b=0 ;
-        if (a == 0 ) b=1;
         for (i = 1; i < n; i++) {
+            if (a == 0 ) b=1;
             a = b;
             b = c;
             c = a + b;
