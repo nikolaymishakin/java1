@@ -14,8 +14,8 @@ public class CyclesGoldenFibo {
     }
 
     public static int fiboNumber(int n) {
-        int i, c = 0, a = 1, b = 1;
-        if (a == 1 || b == 1) {
+        int i, c=0 , a=0, b=0 ;
+        if (c == 0 ) { a=1; b=1;
             System.out.print(a);
             System.out.print(b);
         }
@@ -37,9 +37,9 @@ public class CyclesGoldenFibo {
     }
 
     public static void main(String[] args) {
-        boolean a=containsDigit(288,2);
-        System.out.println(a);
-       // int b=fiboNumber(15);
+        //boolean a=containsDigit(288,2);
+        //System.out.println(a);
+       int b=fiboNumber(15);
     }
 }
 
