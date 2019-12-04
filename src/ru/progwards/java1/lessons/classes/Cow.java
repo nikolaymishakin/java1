@@ -11,6 +11,12 @@ public class Cow extends Animal {
     }
     @Override
     public FoodKind getFoodKind(){
+
         return getFoodKind().HAY;
+
+    }
+    @Override
+    public double getFoodCoeff(){
+        return 0.05 ;
     }
 }
