@@ -1,7 +1,5 @@
 package ru.progwards.java1.lessons.classes;
 
-import javax.xml.bind.SchemaOutputResolver;
-
 public class Animal {
 
     public  Animal(double weight){
