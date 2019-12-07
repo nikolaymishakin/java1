@@ -27,9 +27,9 @@ public class Animal {
     public  double calculateFoodWeight(){
         return getWeight()*getFoodCoeff();
     }
-
-
-
+    public String toStringFull(){
+        return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN+" "+getFoodCoeff();
+    }
     public static void main(String[] args) {
 
     }
