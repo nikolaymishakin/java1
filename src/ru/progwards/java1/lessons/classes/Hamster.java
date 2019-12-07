@@ -12,10 +12,9 @@ public class Hamster extends Animal{
     public FoodKind getFoodKind(){
         return FoodKind.CORN;
     }
-
     @Override
     public String toString() {
-        return super.toString();
+        return "I"+" "+"am"+" "+AnimalKind.HAMSTER+","+" "+"eat"+" "+FoodKind.CORN;
     }
 
     @Override

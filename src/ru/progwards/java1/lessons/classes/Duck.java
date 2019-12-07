@@ -15,7 +15,7 @@ public class Duck extends Animal {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "I"+" "+"am"+" "+AnimalKind.DUCK+","+" "+"eat"+" "+FoodKind.CORN;
     }
 
     @Override

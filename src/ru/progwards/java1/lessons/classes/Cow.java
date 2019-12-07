@@ -15,7 +15,7 @@ public class Cow extends Animal {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "I"+" "+"am"+" "+AnimalKind.COW+","+" "+"eat"+" "+FoodKind.HAY;
     }
 
     @Override
