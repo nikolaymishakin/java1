@@ -13,7 +13,7 @@ public class Animal {
         return FoodKind.UNKNOWN;
     }
     public String toString(){
-        return "I am"+""+AnimalKind.ANIMAL+","+""+"eat"+""+FoodKind.UNKNOWN;
+        return "I am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN;
     }
 
     public  double getWeight(){
@@ -28,9 +28,7 @@ public class Animal {
         return getWeight()*getFoodCoeff();
     }
 
-    public String toStringFull(){
-        return "I am"+AnimalKind.ANIMAL+"eat"+FoodKind.CORN+calculateFoodWeight();
-    }
+
 
     public static void main(String[] args) {
 
