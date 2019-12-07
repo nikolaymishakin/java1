@@ -4,14 +4,14 @@ public class Animal {
 
     public  Animal(double weight){
     }
+    enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
     public  AnimalKind getKind(){
-        return getKind().ANIMAL;
+        return AnimalKind.ANIMAL;
     }
-    public enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
+    enum FoodKind {UNKNOWN, HAY, CORN}
     public FoodKind getFoodKind(){
-        return getFoodKind().UNKNOWN;
+        return FoodKind.UNKNOWN;
     }
-    public enum FoodKind {UNKNOWN, HAY, CORN}
     public String toString(){
         return "I am"+AnimalKind.ANIMAL+","+"eat"+FoodKind.UNKNOWN;
     }
