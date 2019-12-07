@@ -8,9 +8,11 @@ public class Animal {
     public  double getWeight(){
        return getWeight();
     }
+
     public double getFoodCoeff(){
         return 0.02;
     }
+
     public  double calculateFoodWeight(){
         return getWeight()*getFoodCoeff();
     }
