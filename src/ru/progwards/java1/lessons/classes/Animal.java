@@ -13,7 +13,7 @@ public class Animal {
         return FoodKind.UNKNOWN;
     }
     public String toString(){
-        return "I am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN;
+        return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN;
     }
 
     public  double getWeight(){
