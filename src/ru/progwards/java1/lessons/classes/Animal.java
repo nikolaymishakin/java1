@@ -17,18 +17,18 @@ public class Animal {
     }
 
     public  double getWeight(){
-       return getWeight();
+        return 100.;
     }
 
     public double getFoodCoeff(){
         return 0.02;
     }
 
-    public  double calculateFoodWeight(){
-        return getWeight()*getFoodCoeff();
+    public double calculateFoodWeight(){
+        return 2.;
     }
     public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN+" "+getFoodCoeff();
+        return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN+" "+calculateFoodWeight();
     }
     public static void main(String[] args) {
 

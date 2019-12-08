@@ -23,7 +23,10 @@ public class Cow extends Animal {
         return 0.05 ;
     }
     @Override
+    public double calculateFoodWeight(){
+        return 5.;}
+    @Override
     public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.COW+","+" "+"eat"+" "+FoodKind.HAY+" "+getFoodCoeff();
+        return "I"+" "+"am"+" "+AnimalKind.COW+","+" "+"eat"+" "+FoodKind.HAY+" "+calculateFoodWeight();
     }
 }
