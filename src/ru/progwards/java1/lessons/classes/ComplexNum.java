@@ -4,7 +4,6 @@ public class ComplexNum {
 
     public ComplexNum(int a,int b){
         this.a=a;this.b=b;
-        a=1; b=56;
     }
     public String toString(){
         String string1=Integer.toString(a);
