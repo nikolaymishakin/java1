@@ -12,7 +12,7 @@ public class ComplexNum {
     }
      public ComplexNum add(ComplexNum num){
         this.c=c;this.d=d;
-        return new ComplexNum(a+c,b+d);
+        return new ComplexNum(num.a+num.c,num.b+num.d);
     }
     public ComplexNum sub(ComplexNum num){
         return new ComplexNum(num.a-num.c,num.c-num.d);
