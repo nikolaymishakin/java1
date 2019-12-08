@@ -17,7 +17,7 @@ public class Animal {
     }
 
     public  double getWeight(){
-        return getWeight();
+        return this.getWeight();
     }
 
     public double getFoodCoeff(){
