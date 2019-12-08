@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.classes;
 
 public class Animal {
-private double weight;
+public double weight;
     public  Animal(double weight){
         this.weight=weight;
     }

@@ -21,10 +21,7 @@ public class Hamster extends Animal{
     public double getFoodCoeff(){
         return 0.03;
     }
-    @Override
-    public double calculateFoodWeight(){
-        return 3.;}
-    public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.HAMSTER+","+" "+"eat"+" "+FoodKind.CORN+" "+calculateFoodWeight();
-    }
+
+
+
 }

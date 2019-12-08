@@ -25,10 +25,4 @@ public class Duck extends Animal {
     @Override
     public double calculateFoodWeight(){
         return 4.;}
-    public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.DUCK+","+" "+"eat"+" "+FoodKind.CORN+" "+calculateFoodWeight();
-    }
-    public static void main(String[] args) {
-
-    }
 }
