@@ -25,5 +25,7 @@ public class Cow extends Animal {
     public double getFoodCoeff(){
         return 0.05;
     }
-
+    public String toStringFull(){
+        return "I"+" "+"am"+" "+AnimalKind.COW+","+" "+"eat"+" "+FoodKind.HAY+" "+calculateFoodWeight();
+    }
 }

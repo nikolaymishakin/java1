@@ -22,5 +22,7 @@ public class Duck extends Animal {
     public double getFoodCoeff(){
         return 0.04;
     }
-
+    public String toStringFull(){
+        return "I"+" "+"am"+" "+AnimalKind.DUCK+","+" "+"eat"+" "+FoodKind.CORN+" "+calculateFoodWeight();
+    }
 }

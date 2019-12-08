@@ -22,6 +22,7 @@ public class Hamster extends Animal{
         return 0.03;
     }
 
-
-
+    public String toStringFull(){
+        return "I"+" "+"am"+" "+AnimalKind.HAMSTER+","+" "+"eat"+" "+FoodKind.CORN+" "+calculateFoodWeight();
+    }
 }
