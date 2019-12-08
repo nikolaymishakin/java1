@@ -2,25 +2,14 @@ package ru.progwards.java1.lessons.classes;
 public class ComplexNum {
     private int a,b,c,d;
 
-    private String sign(){
-        if(b>0) return "+";
-        else return "-";
-    };
     public ComplexNum(int a,int b){
         this.a=a; this.b=b;this.c=c;this.d=d;
         a=1; b=56;
     }
-    @Override
     public String toString(){
-        String string;
-        if(b==1||b==-1){
-            if(a==0){
-                string=sign()+"i";}
-            else {string=Integer.toString(a)+sign()+"i";}
-            }
-        else {string=Integer.toString(a)+sign()+Integer.toString(b)+"i";
-        }
-        return string;
+        String string1=Integer.toString(a);
+        String string2=Integer.toString(b);
+        return a+"+"+b+"i";
     }
      public ComplexNum add(ComplexNum num){
          return new ComplexNum(num.a+num.c,num.b+num.d);
@@ -36,7 +25,7 @@ public class ComplexNum {
         return new ComplexNum((num.a*num.c+num.b*num.d)/div,(num.b*num.c-num.a*num.d)/div);
     }
     public static void main(String[] args) {
-        int a=1,b=56;
+        String a="1",b="56";
         System.out.println(a+"+"+b+"i");
     }
 }
