@@ -1,9 +1,10 @@
 package ru.progwards.java1.lessons.classes;
 
 public class Cow extends Animal {
-    public Cow(double weight) {
+    public Cow(double weight){
         super(weight);
     }
+
     @Override
     public AnimalKind getKind(){
         return AnimalKind.COW;
@@ -20,7 +21,7 @@ public class Cow extends Animal {
 
     @Override
     public double getFoodCoeff(){
-        return 0.05 ;
+        return 0.05;
     }
     @Override
     public double calculateFoodWeight(){
