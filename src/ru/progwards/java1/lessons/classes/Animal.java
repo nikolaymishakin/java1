@@ -27,14 +27,14 @@ private double weight;
     }
 
     public double calculateFoodWeight(){
-        return 2.;
+        return getWeight()*getFoodCoeff();
     }
     public String toStringFull(){
         return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN+" "+calculateFoodWeight();
     }
     public static void main(String[] args) {
-        Animal animal =new Animal(250);
-        System.out.println(animal.toStringFull());
+        Animal animal =new Animal(480);
+        System.out.println(animal.calculateFoodWeight());
         System.out.println(animal.getWeight());
         System.out.println(animal.getFoodCoeff());
     }
