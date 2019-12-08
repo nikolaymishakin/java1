@@ -25,7 +25,6 @@ public class ComplexNum {
         return new ComplexNum((num.a*num.c+num.b*num.d)/div,(num.b*num.c-num.a*num.d)/div);
     }
     public static void main(String[] args) {
-        ComplexNum num2=new ComplexNum(1,1);
         System.out.println();
     }
 }
