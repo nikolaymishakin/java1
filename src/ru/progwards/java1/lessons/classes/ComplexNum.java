@@ -11,8 +11,8 @@ public class ComplexNum {
         return a+"+"+b+"i";
     }
      public ComplexNum add(ComplexNum num){
-        int c,d;
-        return new ComplexNum(num.a+num.c,num.b+num.d);
+        this.c=c;this.d=d;
+        return new ComplexNum(a+c,b+d);
     }
     public ComplexNum sub(ComplexNum num){
         return new ComplexNum(num.a-num.c,num.c-num.d);
@@ -25,8 +25,7 @@ public class ComplexNum {
         return new ComplexNum((num.a*num.c+num.b*num.d)/div,(num.b*num.c-num.a*num.d)/div);
     }
     public static void main(String[] args) {
-         ComplexNum num1=new ComplexNum(99,99);
         ComplexNum num2=new ComplexNum(1,1);
-
+        System.out.println();
     }
 }
