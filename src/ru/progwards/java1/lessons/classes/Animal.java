@@ -3,7 +3,6 @@ package ru.progwards.java1.lessons.classes;
 public class Animal {
 
     public  Animal(double weight){
-        double w=getWeight();
     }
 
     enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
@@ -19,7 +18,7 @@ public class Animal {
     }
 
     public double getWeight(){
-        return getWeight();
+        return 1.;
     }
 
     public double getFoodCoeff(){
@@ -35,7 +34,7 @@ public class Animal {
     public static void main(String[] args) {
         Animal animal =new Animal(250);
         System.out.println(animal.toStringFull());
-        System.out.println(animal.getFoodCoeff());
+        System.out.println(animal.getWeight());
         System.out.println(animal.getFoodCoeff());
     }
 }
