@@ -3,6 +3,7 @@ package ru.progwards.java1.lessons.classes;
 public class Animal {
 
     public  Animal(double weight){
+
     }
     enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
     public  AnimalKind getKind(){
