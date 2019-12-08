@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.classes;
 public class ComplexNum {
-    private int a,b,c,d;ComplexNum num;
+    public int a,b,c,d;;
 
     public ComplexNum(int a,int b){
         this.a=a;this.b=b;
@@ -11,7 +11,7 @@ public class ComplexNum {
         return a+"+"+b+"i";
     }
      public ComplexNum add(ComplexNum num){
-        this.num=num;
+        this.c=c;this.d=d;
         return new ComplexNum(a+c,b+d);
     }
     public ComplexNum sub(ComplexNum num){
