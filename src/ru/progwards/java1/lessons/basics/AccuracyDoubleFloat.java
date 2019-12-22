@@ -10,8 +10,8 @@ public class AccuracyDoubleFloat {
         return (float)4./3*pi*R*R*R;
     }
     public static double calculateAccuracy(double radius){
-        double a=volumeBallDouble(1);
-        float b=volumeBallFloat(1);
+        double a=volumeBallDouble(radius);
+        float b=volumeBallFloat((float)radius);
         return a-b;
     }
 
