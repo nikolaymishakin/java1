@@ -20,12 +20,12 @@ public class Astronomy {
         return j;
     }
     public static Double earthVsMercury(){
-        double e= earthSquare(),m=mercurySquare(),em=e/m;
-        return em;
+        double e= earthSquare(),m=mercurySquare();
+        return e/m;
     }
     public static Double earthVsJupiter(){
-        double e=earthSquare(),j=jupiterSquare(),ej=e/j;
-        return ej;
+        double e=earthSquare(),j=jupiterSquare();
+        return e/j;
     }
     public static void main(String[] args) {
 

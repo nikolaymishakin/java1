@@ -20,5 +20,6 @@ public class AccuracyDoubleFloat {
         System.out.println(a);
         float b=volumeBallFloat(1);
         System.out.println(b);
+        System.out.println(calculateAccuracy(1));
     }
 }
