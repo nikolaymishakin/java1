@@ -12,7 +12,7 @@ public class AccuracyDoubleFloat {
     public static double calculateAccuracy(double radius){
         double a=volumeBallDouble(1);
         float b=volumeBallFloat(1);
-        return (float)a-b;
+        return a-b;
     }
 
     public static void main(String[] args) {
