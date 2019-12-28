@@ -17,7 +17,7 @@ public class TriangleInfo {
     }
 
     public static void main(String[] args) {
-        boolean a=isTriangle(5,20,4);
+        boolean a=isRightTriangle(121,256,562);
         System.out.println(a);
 
     }

@@ -17,7 +17,7 @@ public class TriangleSimpleInfo {
     }
 
     public static void main(String[] args) {
-        int c=minSide(5,5,5);
+        boolean c=isEquilateralTriangle(2,1,2);
         System.out.println(c);
     }
 }
