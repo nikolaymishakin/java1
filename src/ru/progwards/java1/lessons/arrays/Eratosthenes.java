@@ -12,19 +12,16 @@ public class Eratosthenes {
 
     private void sift(){
         for(int i = 2; i< sieve.length; i++){
-            if(isSimple(i)){
-                for(int j = i+1; i*j< sieve.length; j++){
+                for(int j = 2; i*j< sieve.length; j++){
+                    if(isSimple(i))
                     sieve[i*j] = false;
                 }
             }
         }
-    }
     public boolean isSimple(int n){
         return sieve[n];
     }
 
     public static void main(String[] args) {
-
-
     }
 }
