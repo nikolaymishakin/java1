@@ -12,7 +12,7 @@ public class Eratosthenes {
     private void sift(){
         for(int i = 2;i<sieve.length;i++){
             if(isSimple(i)){
-                for(int j = 2;i*j<sieve.length;j++){
+                for(int j = 3;i*j<sieve.length;j++){
                     sieve[i*j] = false;
                 }
             }
