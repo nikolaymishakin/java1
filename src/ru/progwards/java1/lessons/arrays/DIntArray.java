@@ -3,13 +3,13 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a = {};
+    private int[] a;
     DIntArray () {
     }
     public void add(int num) {
         int[] b = Arrays.copyOf(a,a.length+1);
-        b[a.length] = num;
-    }
+        b[a.length] = num;    }
+
 
     public void atInsert(int pos, int num){
         int [] c = Arrays.copyOf(a,a.length+1);
