@@ -21,7 +21,7 @@ public class DIntArray {
     }
 
     public int at(int pos){
-        return pos;
+        return a[pos];
     }
 
     public static void main(String[] args) {
