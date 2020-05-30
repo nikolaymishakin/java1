@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a;
+    private int[] a = {0,1,2,3};
     DIntArray () {
     }
     public void add(int num) {
