@@ -7,19 +7,19 @@ public class DIntArray {
 DIntArray () {
 }
     public void add(int num) {
-    int [] b = new int[4];
-    Arrays.copyOf(a,b.length+num);
-    }
+    int[] b = new int[1];
+    Arrays.copyOf(b,a.length+num);
+ }
 
     public void atInsert(int pos, int num){
-    int [] c = new int[5];
-    Arrays.copyOf(a,c.length+num);
+    int [] c = new int[2];
+    Arrays.copyOf(c,a.length+num);
     pos = num;
     }
 
     public void atDelete(int pos){
-    int [] d = new int[3];
-    Arrays.copyOf(a,d.length);
+    int [] d = new int[1];
+    Arrays.copyOf(d,a.length-pos);
     }
 
     public int at(int pos){
