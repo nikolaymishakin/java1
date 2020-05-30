@@ -3,11 +3,12 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a = new int[] {0,1,2};
+    private int[] a;
     DIntArray () {
     }
     public void add(int num) {
-        int[] b = Arrays.copyOf(a,a.length+num);
+        int[] b = Arrays.copyOf(a,a.length+1);
+        b[a.length] = num;
     }
 
     public void atInsert(int pos, int num){
@@ -24,6 +25,12 @@ public class DIntArray {
     }
 
     public static void main(String[] args) {
+int [] a = {0,1,2,3};
+int num = 5, pos = 3;
+System.out.println(Arrays.toString(a));
+        int[] b = Arrays.copyOf(a,a.length+1);
+        b[pos] = num;
+        System.out.println(Arrays.toString(b));
 
     }
 }
