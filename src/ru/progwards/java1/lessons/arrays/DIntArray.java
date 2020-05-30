@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a;
+    private int[] a = {};
     DIntArray () {
     }
     public void add(int num) {
@@ -17,7 +17,7 @@ public class DIntArray {
     }
 
     public void atDelete(int pos){
-        int [] d = Arrays.copyOf(a,a.length-pos);
+        int [] d = Arrays.copyOf(a,a.length-1);
     }
 
     public int at(int pos){
