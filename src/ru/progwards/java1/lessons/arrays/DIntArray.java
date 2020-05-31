@@ -4,29 +4,30 @@ package ru.progwards.java1.lessons.arrays;
 
 public class DIntArray {
     private int[] a;
-    DIntArray () {
+
+    DIntArray() {
     }
+
     public void add(int num) {
-        int[] b = Arrays.copyOf(a,a.length+1);
-    b[a.length]+=num;
+        int[] b = Arrays.copyOf(a, a.length + 1);
+        a[a.length] = num;
     }
 
 
-    public void atInsert(int pos, int num){
-        int [] c = Arrays.copyOf(a,a.length+1);
+    public void atInsert(int pos, int num) {
+        int[] c = Arrays.copyOf(a, a.length + 1);
         c[pos] = num;
     }
 
-    public void atDelete(int pos){
-        int [] d = Arrays.copyOf(a,a.length-1);
+    public void atDelete(int pos) {
+        int[] d = Arrays.copyOf(a, a.length - 1);
     }
 
-    public int at(int pos){
+    public int at(int pos) {
         return a[pos];
     }
 
     public static void main(String[] args) {
 
-
-    }
+        }
 }
