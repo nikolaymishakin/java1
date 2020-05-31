@@ -8,8 +8,8 @@ public class DIntArray {
     }
     public void add(int num) {
         int[] b = Arrays.copyOf(a,a.length+1);
-        num = b[a.length];
-        }
+    b[a.length-1]=num;
+    }
 
 
     public void atInsert(int pos, int num){
