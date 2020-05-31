@@ -10,7 +10,7 @@ public class DIntArray {
 
     public void add(int num) {
         int[] b = Arrays.copyOf(a, a.length + 1);
-        b[a.length+1] = num;
+        a[a.length-1] = num;
     }
 
 
