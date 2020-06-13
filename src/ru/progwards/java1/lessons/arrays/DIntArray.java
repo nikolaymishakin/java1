@@ -9,8 +9,8 @@ public class DIntArray {
     }
 
     public void add(int num) {
-        int[] b = new int[a.length+1];
-        System.arraycopy(a,0,b,0,a.length);
+        int[] b = new int[a.length];
+       Arrays.copyOf(a,a.length+1);
         b[a.length-1] = num;
     }
 
