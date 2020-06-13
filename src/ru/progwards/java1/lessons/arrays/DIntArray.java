@@ -3,14 +3,14 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a;
+    private int[] a = {2,58,36,9};
 
     DIntArray() {
     }
 
     public void add(int num) {
         int[] b = Arrays.copyOf(a,a.length+1);
-        b[a.length] = num;
+        b[a.length-1] = num;
     }
 
 
@@ -28,6 +28,18 @@ public class DIntArray {
     }
 
     public static void main(String[] args) {
-
+        int[] a = {2,58,36,9};
+        for(int i = 0;i<a.length;i++){
+            System.out.println(a[i]);
+        }
+        int[] b = Arrays.copyOf(a,a.length+1);
+        for(int i =0;i<b.length;i++){
+            System.out.println(b[i]);
+        }
+        int num = 1;
+        b[b.length-1] = num;
+        for(int i =0;i<b.length;i++){
+            System.out.println(b[i]);
+        }
         }
 }
