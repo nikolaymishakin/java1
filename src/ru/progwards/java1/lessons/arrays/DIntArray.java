@@ -9,7 +9,8 @@ public class DIntArray {
     }
 
     public void add(int num) {
-        int[] b = Arrays.copyOf(a,a.length+1);
+        int[] b = new int[a.length+1];
+        System.arraycopy(a,0,b,0,a.length);
         b[a.length-1] = num;
     }
 
@@ -35,11 +36,14 @@ public class DIntArray {
     }
 
     public static void main(String[] args) {
+        int num = 3, pos = 2;
         int[] a = {2, 58, 36, 9};
             System.out.println(Arrays.toString(a));
         System.out.println();
-        int num = 3, pos = 2;
-        int[] b = new int[a.length];
+        int[] d = new int[a.length+1];
+        System.arraycopy(a,0,d,0,a.length);
+        d[a.length-1] = num;
+        int[] b = new int[a.length+1];
         System.arraycopy(a,0,b,0,a.length);
         b[a.length] = num;
             System.out.println(Arrays.toString(b));
