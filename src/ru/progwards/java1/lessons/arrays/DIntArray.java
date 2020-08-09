@@ -3,12 +3,13 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a = {0};
+    private int[] a;
 
     DIntArray() {
     }
 
     public void add(int num) {
+        if(a[0] == 0) ;
         int[] b = new int[a.length+1];
         System.arraycopy(a,0,b,0,a.length);
         b[a.length-1] = num;
