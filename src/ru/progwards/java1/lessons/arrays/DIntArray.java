@@ -9,13 +9,15 @@ public class DIntArray {
     }
 
     public void add(int num) {
-        int[] b = Arrays.copyOf(a, a.length + 1);
-        b[b.length - 1] = num;
+        int[] b = new int[a.length+1];
+        System.arraycopy(a,0,b,0,a.length);
+        b[b.length] = num;
     }
 
 
     public void atInsert(int pos, int num) {
-        int[] c = Arrays.copyOf(a, a.length + 1);
+        int[] c = new int[a.length+1];
+        System.arraycopy(a,0,c,0,a.length);
         for (int i = 0; i < c.length; i++) {
             if (i < pos - 1) c[i] = a[i];
             else if (i == pos - 1) c[i] = num;
@@ -41,29 +43,11 @@ public class DIntArray {
             System.out.println(a[i]);
         }
         System.out.println();
-        int[] b = Arrays.copyOf(a, a.length + 1);
-        for (int i = 0; i < b.length; i++) {
-            System.out.println(b[i]);
+        int num = 3;
+        int[] b = new int[a.length+1];
+        System.arraycopy(a,0,b,0,a.length);
+        b[a.length] = num;
+            System.out.println(Arrays.toString(b));
         }
-        System.out.println();
-        int num = 1;
-        b[b.length - 1] = num;
-        for (int i = 0; i < b.length; i++) {
-            System.out.println(b[i]);
-        }
-        System.out.println();
-        int pos = 3;
-        int[] c = Arrays.copyOf(a, a.length + 1);
-        for (int i = 0; i < c.length; i++) {
-            if (i < pos - 1) c[i] = a[i];
-            else if (i == pos - 1) c[i] = num;
-            else c[i] = a[i - 1];
-            System.out.println(c[i]);
-        }
-        System.out.println();
-        int[] d = new int[c.length - 1];
-        System.arraycopy(c,0,d,0,pos);
-        System.arraycopy(c,pos+1,d,pos,c.length-1-pos);
-        System.out.println(Arrays.toString(d));
-    }
+
 }
