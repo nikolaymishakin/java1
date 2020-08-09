@@ -26,7 +26,6 @@ public class DIntArray {
     }
 
     public void atDelete(int pos) {
-
         int[] d = new int[a.length - 1];
         System.arraycopy(a, 0, d, 0, pos);
         System.arraycopy(a, pos + 1, d, pos, a.length - pos - 1);
