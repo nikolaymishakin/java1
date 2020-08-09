@@ -9,25 +9,15 @@ public class DIntArray {
     }
 
     public void add(int num) {
-        int[] b = new int[a.length + 1];
-        for(int i = 0; i< a.length;i++){
-            b[i] = a[i];
-        }
-        a = b;
+        int[] b = Arrays.copyOf(a,a.length+1);
         b[a.length-1] = num;
     }
 
-
     public void atInsert(int pos, int num) {
-        int [] c = new int[a.length+1];
+        int [] c = Arrays.copyOf(a,a.length+1);
+        System.arraycopy(a,0,c,0,pos-1);
         c[pos] = num;
-        for (int i = 0; i < pos; i++)
-            c[i] = a[i];
-        for(int i = pos; i< a.length;i++)
-            c[i+1] = a[i];
-        a = c;
-
-
+        System.arraycopy(a,pos+1,c,pos+1,a.length);
     }
 
     public void atDelete(int pos) {
