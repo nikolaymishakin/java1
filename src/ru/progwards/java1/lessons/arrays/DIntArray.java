@@ -3,19 +3,15 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a;
+    private int[] a = new int[0];
     DIntArray() {
-        int[]a = new int[0];
     }
     public void add(int num) {
-        if (a.length == 0) {
-            System.out.println("Array is Empty");}
-            int[] b = new int[a.length + 1];
-            for (int i = 0; i < a.length; i++) {
-                if (i >= a.length) break;
-                b[i] = a[i];
-            }
-            b[a.length - 1] = num;
+            int[] b = new int[a.length];
+            b = Arrays.copyOf(a,a.length);
+            a = new int[a.length+1];
+            a = Arrays.copyOf(b,b.length+1);
+            a[a.length - 1] = num;
         }
 
         public void atInsert ( int pos, int num){
