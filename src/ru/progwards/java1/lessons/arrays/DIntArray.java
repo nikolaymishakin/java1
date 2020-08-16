@@ -8,7 +8,8 @@ public class DIntArray {
         int[]a = new int[0];
     }
     public void add(int num) {
-        if (a.length != 0) {
+        if (a.length == 0) {
+            System.out.println("Array is Empty");}
             int[] b = new int[a.length + 1];
             for (int i = 0; i < a.length; i++) {
                 if (i >= a.length) break;
@@ -16,7 +17,6 @@ public class DIntArray {
             }
             b[a.length - 1] = num;
         }
-    }
 
         public void atInsert ( int pos, int num){
             int[] c = Arrays.copyOf(a, a.length + 1);
