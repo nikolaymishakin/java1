@@ -7,7 +7,7 @@ public class DIntArray {
     DIntArray() {
     }
     public void add(int num) {
-        if(a == null||a.length==0) {}
+        if(num == 0||a.length==0) {}
         int[] b = new int[a.length + 1];
         for (int i = 0; i < a.length; i++) {
             if (i >= a.length) break;
@@ -17,7 +17,7 @@ public class DIntArray {
     }
 
         public void atInsert ( int pos, int num){
-            if(a == null||a.length==0) {}
+            if(num == 0||a.length==0) {}
             int[] c = Arrays.copyOf(a, a.length + 1);
             System.arraycopy(a, 0, c, 0, pos - 1);
             c[pos] = num;
