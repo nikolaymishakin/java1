@@ -7,8 +7,10 @@ public class DIntArray {
 
     DIntArray() {
     }
+    boolean isArrayEmpty (int [] a) {
+        return a.length == 0;
+    }
     public void add(int num) {
-        if(a.length == 0) System.out.println("Array is empty");
         int[] b = new int[a.length + 1];
         for (int i = 0; i < a.length; i++) {
             if (i >= a.length) break;
@@ -18,7 +20,6 @@ public class DIntArray {
     }
 
         public void atInsert ( int pos, int num){
-            if(a.length == 0) System.out.println("Array is empty");
             int[] c = Arrays.copyOf(a, a.length + 1);
             System.arraycopy(a, 0, c, 0, pos - 1);
             c[pos] = num;
@@ -26,7 +27,6 @@ public class DIntArray {
         }
 
         public void atDelete ( int pos){
-            if(a.length == 0) System.out.println("Array is empty");
             int[] d = new int[a.length - 1];
             for (int i = 0; i < pos; i++)
                 d[i] = a[i];
