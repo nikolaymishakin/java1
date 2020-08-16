@@ -8,7 +8,7 @@ public class DIntArray {
         int[]a = new int[0];
     }
     public void add(int num) {
-        if (a.length != 0) {
+        if (a.length == 0) {
             int[] b = new int[a.length + 1];
             for (int i = 0; i < a.length; i++) {
                 if (i >= a.length) break;
@@ -41,7 +41,7 @@ public class DIntArray {
 
         public static void main (String[]args){
             int num = 3, pos = 2;
-            int[] a = {2, 58, 36, 9};
+            int[] a = {};
             System.out.println(Arrays.toString(a));
             System.out.println();
             int[] d = new int[a.length + 1];
