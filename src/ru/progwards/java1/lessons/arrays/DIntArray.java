@@ -9,25 +9,36 @@ public class DIntArray {
     public void add(int num) {
             int[] b = new int[a.length];
             b = Arrays.copyOf(a,a.length);
-            a = new int[a.length+1];
-            a = Arrays.copyOf(b,b.length+1);
+            a = new int[a.length + 1];
+            a = Arrays.copyOf(b,b.length + 1);
             a[a.length - 1] = num;
         }
 
         public void atInsert ( int pos, int num){
-            int[] c = Arrays.copyOf(a, a.length + 1);
-            System.arraycopy(a, 0, c, 0, pos - 1);
-            c[pos] = num;
-            System.arraycopy(a, pos + 1, c, pos + 1, a.length);
+            int[] c = new int[a.length - pos];
+            for(int i = 0;i < c.length; i++){
+                c[i] = a[pos + 1];
+            }
+          int[]  b = new int[a.length];
+            b= Arrays.copyOf(a,a.length);
+            a = Arrays.copyOf(a,a.length + 1);
+            for(int i = 0;i < pos - 1;i ++){
+                a[i] = b[i];
+            }
+            a[pos - 1] = num;
+            for(int i = pos; i < a.length;i ++){
+                a[i] = b[i - 1];
+            }
         }
 
         public void atDelete ( int pos){
-            int[] d = new int[a.length - 1];
+            int[] d = new int[a.length];
+            d = Arrays.copyOf(a,a.length);
+            a = new int[a.length - 1];
             for (int i = 0; i < pos; i++)
-                d[i] = a[i];
-            for (int i = pos + 1; i < a.length; i++)
-                d[i - 1] = a[i];
-            a = d;
+                a[i] = d[i];
+            for (int i = pos + 1; i < d.length; i++)
+                a[i - 1] = d[i];
 
         }
 
