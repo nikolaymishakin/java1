@@ -3,10 +3,12 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a = new int[0];
+    private int[] a;
     DIntArray() {
+        int[]a = new int[0];
     }
     public void add(int num) {
+        if(a.length == 0) {}
         int[] b = new int[a.length + 1];
         for (int i = 0; i < a.length; i++) {
             if (i >= a.length) break;
@@ -16,6 +18,7 @@ public class DIntArray {
     }
 
         public void atInsert ( int pos, int num){
+            if(a.length == 0) {}
             int[] c = Arrays.copyOf(a, a.length + 1);
             System.arraycopy(a, 0, c, 0, pos - 1);
             c[pos] = num;
@@ -23,6 +26,7 @@ public class DIntArray {
         }
 
         public void atDelete ( int pos){
+            if(a.length == 0) {}
             int[] d = new int[a.length - 1];
             for (int i = 0; i < pos; i++)
                 d[i] = a[i];
