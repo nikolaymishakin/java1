@@ -37,6 +37,7 @@ public class DIntArray {
         }
 
         public int at (int pos){
+        if(pos<=0) return a[0];
          return pos;
 
         }
