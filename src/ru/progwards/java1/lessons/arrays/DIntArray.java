@@ -12,7 +12,8 @@ public class DIntArray {
         if(a.length==0) System.out.println("a is null");
        int [] b = new int[a.length];
        b = Arrays.copyOf(a,a.length);
-       a = Arrays.copyOf(a,a.length+1);
+       a = new int[a.length+1];
+       b = new int[a.length+1];
        b = Arrays.copyOf(a,a.length+1);
             b[a.length-1] = num;
         }
