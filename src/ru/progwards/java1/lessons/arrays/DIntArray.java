@@ -8,7 +8,6 @@ public class DIntArray {
 
     }
     public void add(int num) {
-        if(a.length==0) System.out.println("Array is null");
        int [] b = Arrays.copyOf(a,a.length+1);
             b[a.length-1] = num;
         }
@@ -36,6 +35,7 @@ public class DIntArray {
         }
 
         public int at (int pos){
+        if(a.length==0) return a.length;
             return pos;
         }
 
