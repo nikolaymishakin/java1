@@ -14,7 +14,7 @@ public class DIntArray {
        b = Arrays.copyOf(a,a.length);
        a = Arrays.copyOf(a,a.length+1);
        a = Arrays.copyOf(b,b.length+1);
-            a[a.length-1] = num;
+            a[b.length-1] = num;
         }
 
         public void atInsert ( int pos, int num) {
