@@ -10,10 +10,8 @@ public class DIntArray {
     }
     public void add(int num) {
         if(a.length==0) System.out.println("a is null");
-       int []b = new int[a.length];
-       b = Arrays.copyOf(a,a.length);
        a = new int[a.length+1];
-       a = Arrays.copyOf(b,b.length+1);
+       a = Arrays.copyOf(a,a.length+1);
        a[a.length-1] = num;
         }
 
