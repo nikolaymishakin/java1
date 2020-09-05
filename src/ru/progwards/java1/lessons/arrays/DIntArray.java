@@ -11,7 +11,7 @@ public class DIntArray {
     public void add(int num) {
       int [] b = new int[a.length+1];
       b = Arrays.copyOf(a,a.length+1);
-      b[a.length-1] = num;
+      b[a.length] = num;
         }
 
         public void atInsert ( int pos, int num) {
@@ -37,7 +37,6 @@ public class DIntArray {
         }
 
         public int at (int pos){
-        if(pos<0||pos>a.length) return 0;
          return pos;
 
         }
