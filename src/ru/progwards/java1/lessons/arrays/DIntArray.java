@@ -8,22 +8,18 @@ public class DIntArray {
 
     }
     public void add(int num) {
-       int [] b = new int[a.length];
-            b = Arrays.copyOf(a,a.length);
-            a = new int[a.length + 1];
-            b = Arrays.copyOf(a,a.length + 1);
-            b[a.length - 1] = num;
+       int [] b = Arrays.copyOf(a,a.length+1);
+            b[a.length] = num;
         }
 
         public void atInsert ( int pos, int num) {
         int [] c = new int[a.length];
-            c = Arrays.copyOf(a,a.length);
             a = new int[a.length + 1];
             for (int i = 0; i <pos; i++)
-            a[i] = c[i];
-            a[pos] = num;
-            for (int i = pos+1; i < a.length+1; i++)
-                a[i] = c[i-1];
+            c[i] = a[i];
+            c[pos] = num;
+            for (int i = pos+1; i < a.length; i++)
+                c[i] = a[i];
 
         }
 
