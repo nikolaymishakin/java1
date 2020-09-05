@@ -12,7 +12,7 @@ public class DIntArray {
         if(a.length==0) System.out.println("a is null");
        int [] b = new int[a.length+1];
        b = Arrays.copyOf(a,a.length+1);
-       b[a.length-1] = num;
+       b[a.length+1] = num;
         }
 
         public void atInsert ( int pos, int num) {
