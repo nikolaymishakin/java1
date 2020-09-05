@@ -10,11 +10,9 @@ public class DIntArray {
     }
     public void add(int num) {
         if(a.length==0) System.out.println("a is null");
-       int [] b = new int[a.length];
-       b = Arrays.copyOf(a,a.length);
-       a = Arrays.copyOf(a,a.length+1);
-       a = Arrays.copyOf(b,b.length+1);
-            a[b.length-1] = num;
+       int [] b = new int[a.length+1];
+       b = Arrays.copyOf(a,a.length+1);
+            b[a.length-1] = num;
         }
 
         public void atInsert ( int pos, int num) {
