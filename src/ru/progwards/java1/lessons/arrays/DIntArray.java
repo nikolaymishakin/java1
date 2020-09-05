@@ -4,10 +4,12 @@ package ru.progwards.java1.lessons.arrays;
 
 public class DIntArray {
     private int[] a = new int[0];
+
     DIntArray() {
 
     }
     public void add(int num) {
+        if(a.length==0) System.out.println("a is null");
        int [] b = new int[a.length];
        b = Arrays.copyOf(a,a.length);
        a = Arrays.copyOf(a,a.length+1);
@@ -38,8 +40,8 @@ public class DIntArray {
         }
 
         public int at (int pos){
-        if(a.length==0) return a[0];
-            else return pos;
+         return pos;
+
         }
 
         public static void main (String[]args){
