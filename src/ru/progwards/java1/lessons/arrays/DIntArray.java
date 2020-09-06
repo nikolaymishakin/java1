@@ -7,11 +7,12 @@ public class DIntArray {
     DIntArray() {
     }
     public void add(int num) {
-      a = new int[a.length+1];
-     a = Arrays.copyOf(a,a.length+1);
-      a[a.length-1] = num;
+        if (num != 0) {
+            a = new int[a.length + 1];
+            a = Arrays.copyOf(a, a.length + 1);
+            a[a.length - 1] = num;
         }
-
+    }
         public void atInsert ( int pos, int num) {
         int [] c = new int[a.length];
             a = new int[a.length + 1];
