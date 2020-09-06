@@ -9,7 +9,7 @@ public class DIntArray {
     public void add(int num) {
       a = new int[a.length+1];
      a = Arrays.copyOf(a,a.length+1);
-      a[a.length] = num;
+      a[a.length-1] = num;
         }
 
         public void atInsert ( int pos, int num) {
