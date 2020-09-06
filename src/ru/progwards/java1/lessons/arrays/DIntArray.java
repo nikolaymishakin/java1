@@ -10,10 +10,10 @@ public class DIntArray {
 }
 
     public void add(int num) {
-        int []b = new int[a.length+1];
-        a = Arrays.copyOf(b,b.length+1);
+        a = new int[a.length+1];
+        a = Arrays.copyOf(a,a.length+1);
         a[a.length -1] = num;
-        System.out.println(Arrays.toString(b));
+        System.out.println(Arrays.toString(a));
     }
 
     public void atInsert(int pos, int num) {
@@ -39,7 +39,8 @@ public class DIntArray {
     }
 
     public int at(int pos) {
-        return a[pos];
+        if(a.length==0) return a[0];
+        else return a[pos];
     }
     public static void main(String[] args) {
         DIntArray a = new DIntArray();
