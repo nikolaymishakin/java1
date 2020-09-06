@@ -11,8 +11,8 @@ public class DIntArray {
 
     public void add(int num) {
         a = new int[a.length + 1];
+        a[a.length -1] = num;
         a = Arrays.copyOf(a, a.length + 1);
-        a[a.length -2] = num;
         System.out.println(Arrays.toString(a));
     }
 
