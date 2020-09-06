@@ -7,11 +7,11 @@ public class DIntArray {
 
     DIntArray() {
 
-    }
+}
 
     public void add(int num) {
         a = new int[a.length + 1];
-        a = Arrays.copyOf(a, a.length + 1);
+        a = Arrays.copyOf(a,a.length);
         a[a.length -1] = num;
         System.out.println(Arrays.toString(a));
     }
