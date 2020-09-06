@@ -3,16 +3,16 @@ package ru.progwards.java1.lessons.arrays;
         import java.util.Arrays;
 
 public class DIntArray {
-    private int[] a = {};
+    private int [] a = new int[0];
     DIntArray() {
+
     }
     public void add(int num) {
-        if (num != 0) {
-            a = new int[a.length + 1];
+            a = new int[a.length+1];
             a = Arrays.copyOf(a, a.length + 1);
             a[a.length - 1] = num;
         }
-    }
+
         public void atInsert ( int pos, int num) {
         int [] c = new int[a.length];
             a = new int[a.length + 1];
@@ -36,7 +36,7 @@ public class DIntArray {
         }
 
         public int at (int pos){
-        if(pos<=0) return a[0];
+        if(pos==0) return a[0];
          return pos;
 
         }
