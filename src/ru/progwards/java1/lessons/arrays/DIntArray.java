@@ -12,7 +12,7 @@ public class DIntArray {
         b = Arrays.copyOf(a,a.length);
                 b = new int[a.length + 1];
             b = Arrays.copyOf(a, a.length + 1);
-            b[a.length+1] = num;
+            b[a.length-1] = num;
 
     }
 
