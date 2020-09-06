@@ -10,10 +10,10 @@ public class DIntArray {
 }
 
     public void add(int num) {
-        a = new int[a.length];
-        a = Arrays.copyOf(a,a.length+1);
+        int []b = new int[a.length+1];
+        a = Arrays.copyOf(b,b.length+1);
         a[a.length -1] = num;
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(b));
     }
 
     public void atInsert(int pos, int num) {
