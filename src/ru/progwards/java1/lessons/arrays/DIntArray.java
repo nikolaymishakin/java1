@@ -8,10 +8,11 @@ public class DIntArray {
 
     }
     public void add(int num) {
-
-            a = new int[a.length + 1];
-            a = Arrays.copyOf(a, a.length + 1);
-            a[a.length - 1] = num;
+        int [] b = new int[a.length];
+        b = Arrays.copyOf(a,a.length);
+                b = new int[a.length + 1];
+            b = Arrays.copyOf(a, a.length + 1);
+            b[a.length] = num;
 
     }
 
