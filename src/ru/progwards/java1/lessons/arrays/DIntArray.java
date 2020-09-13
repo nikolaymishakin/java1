@@ -25,7 +25,7 @@ public class DIntArray {
         for (int i = 0; i < pos; i++)
             a[i] = c[i];
         a[pos] = num;
-        for (int i = pos+1; i < a.length; i++)
+        for (int i = pos+1; i < c.length; i++)
             a[i+1] = c[i];
 
     }
