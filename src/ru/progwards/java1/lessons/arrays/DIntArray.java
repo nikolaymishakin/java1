@@ -20,12 +20,13 @@ public class DIntArray {
 
     public void atInsert(int pos, int num) {
         int[] c = new int[a.length];
+        c = Arrays.copyOf(a,a.length);
         a = new int[a.length + 1];
         for (int i = 0; i < pos; i++)
-            c[i] = a[i];
+            a[i] = c[i];
         c[pos] = num;
         for (int i = pos + 1; i < a.length; i++)
-            c[i] = a[i];
+            a[i] = c[i];
 
     }
 
