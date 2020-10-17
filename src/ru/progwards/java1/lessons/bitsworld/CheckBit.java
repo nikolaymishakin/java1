@@ -8,7 +8,7 @@ public class CheckBit {
     }
 
     public static void main(String[] args) {
-        byte value = (byte)51;
+        byte value = (byte)-51;
         int bitNumber = 3;
         System.out.println(Integer.toBinaryString(value));
         System.out.println(checkBit(value,bitNumber));

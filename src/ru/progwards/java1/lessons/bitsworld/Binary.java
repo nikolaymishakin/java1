@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.bitsworld;
 public class Binary {
         private  byte num;
 
-        public Binary(int num) {
+        public Binary(byte num) {
 
         }
 
@@ -12,8 +12,8 @@ public class Binary {
         }
 
         public static void main (String[]args){
-            Binary a = new Binary(1);
-            System.out.println(a);
+
+            System.out.println();
         }
     }
 
