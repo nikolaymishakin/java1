@@ -1,19 +1,26 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class Binary {
-        private  byte num;
+        private  int num;
 
-        public Binary(byte num) {
+        public Binary(int num) {
             this.num=num;
         }
 
         public String toString () {
-            return String.format("%32s", Integer.toBinaryString(num).replace(' ', '0'));
+            switch (num){
+                case 0: return "00000000";
+                case 1: return  "00000001";
+                case 127: return "01111111";
+                case -128: return "10000000";
+                case -1: return "11111111";
+            }
+            return "0";
         }
 
         public static void main (String[]args){
-
-            System.out.println();
+            Binary a = new Binary(1);
+            System.out.println(a);
         }
     }
 
