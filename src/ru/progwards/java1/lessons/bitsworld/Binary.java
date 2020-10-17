@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class Binary {
-    private byte num;
+    public byte num;
 
     public Binary(byte num) {
         this.num = num;
