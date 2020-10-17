@@ -4,7 +4,7 @@ public class Binary {
         private  byte num;
 
         public Binary(byte num) {
-
+            this.num=num;
         }
 
         public String toString () {
