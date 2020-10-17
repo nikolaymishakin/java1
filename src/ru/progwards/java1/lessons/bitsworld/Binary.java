@@ -4,7 +4,7 @@ public class Binary {
     private int num;
 
     public Binary(int num) {
-        ;
+
         this.num = num;
 
         }
