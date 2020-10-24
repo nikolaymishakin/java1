@@ -12,9 +12,9 @@ public class ReverseDigits {
 
 
         public static void main(String[] args) {
-            int num=reverseDigits(254);
-            System.out.println(num);
-
+            System.out.println(reverseDigits(123));
+            System.out.println(reverseDigits(456));
+            System.out.println(reverseDigits(789));
         }
 
     }
