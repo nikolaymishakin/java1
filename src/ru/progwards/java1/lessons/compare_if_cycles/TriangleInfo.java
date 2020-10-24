@@ -17,8 +17,20 @@ public class TriangleInfo {
     }
 
     public static void main(String[] args) {
-        boolean a=isRightTriangle(121,256,562);
-        System.out.println(a);
-
+        System.out.println(isTriangle(2,2,3));
+        System.out.println(isTriangle(2,3,4));
+        System.out.println(isTriangle(3,2,5));
+        System.out.println(isTriangle(2,3,6));
+        System.out.println(isTriangle(3,3,9));
+        System.out.println(isIsoscelesTriangle(2,2,3));
+        System.out.println(isIsoscelesTriangle(2,3,2));
+        System.out.println(isIsoscelesTriangle(3,2,2));
+        System.out.println(isIsoscelesTriangle(2,2,2));
+        System.out.println(isIsoscelesTriangle(3,3,3));
+        System.out.println(isRightTriangle(3,4,5));
+        System.out.println(isRightTriangle(2,3,4));
+        System.out.println(isRightTriangle(3,2,5));
+        System.out.println(isRightTriangle(2,3,6));
+        System.out.println(isRightTriangle(3,3,9));
     }
 }

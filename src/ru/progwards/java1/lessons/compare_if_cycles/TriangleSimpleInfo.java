@@ -17,7 +17,12 @@ public class TriangleSimpleInfo {
     }
 
     public static void main(String[] args) {
-        boolean c=isEquilateralTriangle(2,1,2);
-        System.out.println(c);
+        System.out.println(isEquilateralTriangle(2,2,3));
+        System.out.println(isEquilateralTriangle(2,3,2));
+        System.out.println(isEquilateralTriangle(3,2,2));
+        System.out.println(isEquilateralTriangle(2,2,2));
+        System.out.println(isEquilateralTriangle(3,3,3));
+        System.out.println(maxSide(4,2,3));
+        System.out.println(minSide(3,5,7));
     }
 }
