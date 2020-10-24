@@ -10,16 +10,12 @@ public class AccuracyDoubleFloat {
         return (float)4./3*pi*R*R*R;
     }
     public static double calculateAccuracy(double radius){
-        double a=volumeBallDouble(radius);
-        float b=volumeBallFloat((float)radius);
-        return a-b;
+        return volumeBallDouble(radius)-volumeBallFloat((float)radius);
     }
 
     public static void main(String[] args) {
-        double a=volumeBallDouble(1);
-        System.out.println(a);
-        float b=volumeBallFloat(1);
-        System.out.println(b);
+        System.out.println(volumeBallDouble(1));
+        System.out.println(volumeBallFloat(1));
         System.out.println(calculateAccuracy(1));
     }
 }
