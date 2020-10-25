@@ -15,7 +15,7 @@ public class Duck extends Animal {
 
     @Override
     public String toString() {
-        return "I"+" "+"am"+" "+AnimalKind.DUCK+","+" "+"eat"+" "+FoodKind.CORN;
+        return "I am "+AnimalKind.DUCK+", eat "+FoodKind.CORN;
     }
 
     @Override
@@ -23,6 +23,6 @@ public class Duck extends Animal {
         return 0.04;
     }
     public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.DUCK+","+" "+"eat"+" "+FoodKind.CORN+" "+calculateFoodWeight();
+        return "I am "+AnimalKind.DUCK+", eat "+FoodKind.CORN+" "+calculateFoodWeight();
     }
 }

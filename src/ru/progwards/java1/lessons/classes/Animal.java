@@ -15,7 +15,7 @@ public double weight;
         return FoodKind.UNKNOWN;
     }
     public String toString(){
-        return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN;
+        return "I am "+AnimalKind.ANIMAL+", eat "+FoodKind.UNKNOWN;
     }
 
     public double getWeight(){
@@ -30,7 +30,7 @@ public double weight;
         return getWeight()*getFoodCoeff();
     }
     public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.ANIMAL+","+" "+"eat"+" "+FoodKind.UNKNOWN+" "+calculateFoodWeight();
+        return "I am "+AnimalKind.ANIMAL+", eat "+FoodKind.UNKNOWN+" "+calculateFoodWeight();
     }
     public static void main(String[] args) {
         Animal animal =new Animal(480);

@@ -14,7 +14,7 @@ public class Hamster extends Animal{
     }
     @Override
     public String toString() {
-        return "I"+" "+"am"+" "+AnimalKind.HAMSTER+","+" "+"eat"+" "+FoodKind.CORN;
+        return "I am "+AnimalKind.HAMSTER+", eat "+FoodKind.CORN;
     }
 
     @Override
@@ -23,6 +23,6 @@ public class Hamster extends Animal{
     }
 
     public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.HAMSTER+","+" "+"eat"+" "+FoodKind.CORN+" "+calculateFoodWeight();
+        return "I am "+AnimalKind.HAMSTER+", eat "+FoodKind.CORN+" "+calculateFoodWeight();
     }
 }

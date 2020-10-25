@@ -15,7 +15,7 @@ public class Cow extends Animal {
     }
     @Override
     public String toString() {
-        return "I"+" "+"am"+" "+AnimalKind.COW+","+" "+"eat"+" "+FoodKind.HAY;
+        return "I am "+AnimalKind.COW+", eat "+FoodKind.HAY;
     }
     @Override
     public double getWeight(){
@@ -26,6 +26,6 @@ public class Cow extends Animal {
         return 0.05;
     }
     public String toStringFull(){
-        return "I"+" "+"am"+" "+AnimalKind.COW+","+" "+"eat"+" "+FoodKind.HAY+" "+calculateFoodWeight();
+        return "I am "+AnimalKind.COW+", eat "+FoodKind.HAY+" "+calculateFoodWeight();
     }
 }
