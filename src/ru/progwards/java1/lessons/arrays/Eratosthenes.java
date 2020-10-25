@@ -6,7 +6,7 @@ public class Eratosthenes {
     private boolean[] sieve;
 
     public Eratosthenes(int N) {
-        sieve = new boolean[N+1];
+        sieve = new boolean[N];
         Arrays.fill(sieve, true);
         sift();
     }
