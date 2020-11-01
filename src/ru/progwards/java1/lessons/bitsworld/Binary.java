@@ -1,20 +1,26 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class Binary {
-    private int num;
+    private byte num;
+
     public Binary(byte num) {
-        this.num= num&0b0000_0000_0000_0000_0000_0000_1111_1111;
+        this.num = num;
     }
 
     public String toString() {
-
-        return String.format("%8s", Integer.toBinaryString(num)).replace( ' ', '0');
+        String str = "";
+                for( byte i = 7;i>=0;i--){
+                    str = (num&1)+str;
+                    num>>=1;
+                    }
+        return str;
     }
 
-        public static void main (String[]args){
-            Binary a = new Binary((byte) -1);
-            System.out.println(a);
-        }
+            public static void main (String[]args){
+                Binary a = new Binary((byte) -128);
+                System.out.println(a);
+            }
 
-}
+    }
+
 
