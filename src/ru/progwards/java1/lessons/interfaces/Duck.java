@@ -27,7 +27,7 @@ public class Duck extends Animal {
     }
     @Override
     public double getFood1kgPrice() {
-        switch (foodKind) {
+        switch (getFoodKind()) {
             case UNKNOWN:
                 return 0.0;
             case HAY:
