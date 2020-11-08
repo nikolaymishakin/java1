@@ -62,15 +62,11 @@ public class Animal implements FoodCompare{
     }
     @Override
     public int compareFoodPrice(Animal aminal){
-        return Double.compare(this.getFood1kgPrice(),getFood1kgPrice());
+        return Double.compare(this.getFoodPrice(),getFoodPrice());
     }
 
     public static void main(String[] args) {
-        Cow cow = new Cow(480);
-        Duck duck = new Duck(480);
-        Hamster hamster = new Hamster(480);
-        System.out.println(cow.compareFoodPrice(duck));
-        System.out.println(cow.equals(hamster));
-        System.out.println(duck.equals(hamster));
+
+        System.out.println(new Animal(1D).compareFoodPrice(new Cow(1D)));
     }
 }
