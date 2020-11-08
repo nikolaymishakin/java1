@@ -28,4 +28,5 @@ public class Cow extends Animal {
     public String toStringFull(){
         return "I am "+AnimalKind.COW+", eat "+FoodKind.HAY+" "+calculateFoodWeight();
     }
+
 }
