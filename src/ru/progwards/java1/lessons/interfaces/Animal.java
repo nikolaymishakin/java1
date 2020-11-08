@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Animal implements FoodCompare{
     public double weight;
-    FoodKind foodKind;
 
     public  Animal(double weight){
         this.weight=weight;
@@ -50,7 +49,7 @@ public class Animal implements FoodCompare{
         return "I am "+AnimalKind.ANIMAL+", eat "+FoodKind.UNKNOWN+" "+calculateFoodWeight();
     }
     public double getFood1kgPrice(){
-            switch (foodKind){
+            switch (getFoodKind()){
                 case UNKNOWN: return 0.0;
                 case HAY: return 20.0;
                 case CORN: return 50.0;
@@ -59,7 +58,7 @@ public class Animal implements FoodCompare{
     }
 
     public double getFoodPrice(){
-        return calculateFoodWeight();
+        return calculateFoodWeight()*getFood1kgPrice();
     }
     @Override
     public int compareFoodPrice(Animal aminal){
