@@ -10,7 +10,7 @@ public class CalculateFibonacci {
                 c = a + b;
                 a = b;
                 b = c;
-                lastFibo.n = b;
+                lastFibo.n = n;
                 if ( lastFibo.n != lastFibo.fibo )
                 lastFibo.fibo = b;
             }
