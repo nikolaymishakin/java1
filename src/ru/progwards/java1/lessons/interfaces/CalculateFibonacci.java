@@ -20,9 +20,10 @@ public class CalculateFibonacci {
     }
 
     public static CacheInfo getLastFibo() {
-        return CalculateFibonacci.lastFibo;
+        if (lastFibo.n != lastFibo.fibo)
+        lastFibo.fibo = lastFibo.n;
+         return lastFibo;
     }
-
     public static void clearLastFibo() {
         lastFibo = null;
     }
