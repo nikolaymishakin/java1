@@ -8,6 +8,7 @@ public class CalculateFibonacci {
            if (n == 0) return a;
            for( int i = 2; i <= n; i++){
                c = a + b;
+               if ( n != c) getLastFibo().fibo = c;
                a = b;
                b = c;
            }
@@ -20,8 +21,6 @@ public class CalculateFibonacci {
     }
 
     public static CacheInfo getLastFibo() {
-        if (lastFibo.n != lastFibo.fibo)
-        lastFibo.fibo = lastFibo.n;
          return lastFibo;
     }
     public static void clearLastFibo() {
