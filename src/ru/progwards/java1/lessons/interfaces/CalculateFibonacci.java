@@ -5,23 +5,20 @@ public class CalculateFibonacci {
 
     public static int fiboNumber (int n) {
         int a = 0, b = 1, c;
-           if (n == 0) return a;
-           for( int i = 2; i <= n; i++){
-               c = a + b;
-               a = b;
-               b = c;
-           }
-           return b;
+        if (n == 0) return a;
+        for (int i = 2; i <= n; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+                if ( b != lastFibo.n) lastFibo.fibo = b;
+            }
+            return b;
     }
 
     public static class CacheInfo {
         public int n;
         public int fibo;
 
-       CacheInfo (){
-           this.n = lastFibo.n;
-           this.fibo = lastFibo.fibo;
-       }
     }
 
     public static CacheInfo getLastFibo() {
@@ -32,7 +29,7 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
-        System.out.println(fiboNumber(10));
+        System.out.println();
 
     }
 
