@@ -4,14 +4,16 @@ public class CalculateFibonacci {
     private static CacheInfo lastFibo;
 
     public static int fiboNumber (int n) {
+        lastFibo.n = n;
         int a = 0, b = 1, c;
         if (n == 0) return a;
         for (int i = 2; i <= n; i++) {
                 c = a + b;
                 a = b;
                 b = c;
-                if ( n != lastFibo.fibo )
-                lastFibo.fibo = n;
+                lastFibo.fibo = b;
+                if ( lastFibo.n != lastFibo.fibo )
+                lastFibo.fibo = b;
             }
 
             return b;
