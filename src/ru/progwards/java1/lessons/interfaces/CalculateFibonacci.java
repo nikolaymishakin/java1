@@ -4,19 +4,14 @@ public class CalculateFibonacci {
     private static CacheInfo lastFibo;
 
     public static int fiboNumber (int n) {
-        if ( n != lastFibo.n) {
-            int i = 1;
-            int c = 0;
-            int a;
-            int b = 1;
-            for (; i <= lastFibo.n; i++) {
-                a = b;
-                b = c;
-                c = a + b;
-                lastFibo.fibo = c;
-            }
-        }
-        return lastFibo.n;
+        int a = 0, b = 1, c;
+           if (n == 0) return a;
+           for( int i = 2; i <= n; i++){
+               c = a + b;
+               a = b;
+               b = c;
+           }
+           return lastFibo.n;
     }
 
     public static class CacheInfo {
@@ -33,6 +28,7 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
+        System.out.println(fiboNumber(10));
 
     }
 
