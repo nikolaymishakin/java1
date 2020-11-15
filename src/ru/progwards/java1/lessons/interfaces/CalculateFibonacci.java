@@ -11,7 +11,7 @@ public class CalculateFibonacci {
                a = b;
                b = c;
            }
-           return lastFibo.n;
+           return b;
     }
 
     public static class CacheInfo {
