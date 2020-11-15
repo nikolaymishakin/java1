@@ -11,6 +11,7 @@ public class CalculateFibonacci {
                 a = b;
                 b = c;
             }
+        if ( n != lastFibo.fibo ) lastFibo.n = b;
             return b;
     }
 
@@ -28,7 +29,7 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
-        System.out.println(fiboNumber(1));
+        System.out.println(getLastFibo());
 
     }
 
