@@ -17,10 +17,15 @@ public class CalculateFibonacci {
     public static class CacheInfo {
         public int n;
         public int fibo;
+
+       CacheInfo (){
+           this.n = lastFibo.n;
+           this.fibo = lastFibo.fibo;
+       }
     }
 
     public static CacheInfo getLastFibo() {
-         return CalculateFibonacci.lastFibo;
+          return lastFibo;
     }
     public static void clearLastFibo() {
         lastFibo = null;
