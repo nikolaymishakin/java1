@@ -7,7 +7,7 @@ public class CalculateFibonacci {
         int a = 0, b = 1, c;
         if (n == 0) return a;
         for (int i = 2; i <= n; i++) {
-            if ( lastFibo.n != lastFibo.fibo) lastFibo.fibo = b;
+            if ( i != lastFibo.n) lastFibo.fibo = b;
                 c = a + b;
                 a = b;
                 b = c;
