@@ -3,15 +3,15 @@ package ru.progwards.java1.lessons.interfaces;
 public class CalculateFibonacci {
     private static CacheInfo lastFibo;
 
-    public static int fiboNumber (int n) {
-        int a = 0, b = 1;
-        if (n == 0) return a;
-        for (int i = 2; i <= n; i++) {
-            lastFibo.fibo = a + b;
-            a = b;
-            b = lastFibo.fibo;
-        }
-        return b;
+    public static int fiboNumber (int n){
+      int a = 0, b =1, c;
+      for (int i = 2; i <= n; i++) {
+              c = a + b;
+              getLastFibo().fibo = c;
+              a = b;
+              b = c;
+          }
+      return b;
     }
 
     public static class CacheInfo {
@@ -27,6 +27,7 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
+        CalculateFibonacci calculateFibonacci = new CalculateFibonacci();
         System.out.println(fiboNumber(1));
 
     }
