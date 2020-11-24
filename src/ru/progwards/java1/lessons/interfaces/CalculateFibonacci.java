@@ -4,12 +4,13 @@ public class CalculateFibonacci {
     private static CacheInfo lastFibo;
     public static int fiboNumber (int n) {
         int a = 0, b = 1, c;
-        if ( lastFibo.n == 0 || lastFibo.n == 1) lastFibo.fibo = 1;
-            for (int i = 2; i <= n; i++) {
+        if ( getLastFibo().n == 0 || getLastFibo().n == 1) return b;
+
+            for (int i = 2; i <= getLastFibo().n; i++) {
                 c = a + b;
                 a = b;
                 b = c;
-                if ( b != lastFibo.fibo) lastFibo.fibo = b;
+                if ( b != getLastFibo().fibo) getLastFibo().fibo = b;
             }
             return b;
         }
@@ -21,11 +22,11 @@ public class CalculateFibonacci {
             this.n = n;
             this.fibo = fibo;
         }
-        CalculateFibonacci.CacheInfo cacheInfo = new CalculateFibonacci.CacheInfo(1,0);
+        CacheInfo cacheInfo = new CacheInfo(1,0);
 
     }
     public static CacheInfo getLastFibo() {
-           return lastFibo;
+           return lastFibo.cacheInfo;
     }
     public static void clearLastFibo() {
         lastFibo = null;
