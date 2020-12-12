@@ -4,24 +4,22 @@ public class CalculateFibonacci {
     private static CacheInfo lastFibo;
 
     public static int fiboNumber (int n) {
-        if (getLastFibo().fibo == 0) {
-            if (getLastFibo().n == 0 || getLastFibo().n == 1) {
-                getLastFibo().fibo = 1;
-            } else {
-                getLastFibo().fibo = fiboNumber(getLastFibo().n - 1) + fiboNumber(getLastFibo().n - 2);
+        CacheInfo cacheInfo = new CacheInfo();
+        cacheInfo.n = n;
+        cacheInfo.fibo = 0;
+        int a = 0, b = 1, c;
+            for (int i = 2; i <= cacheInfo.n; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+                if (b != cacheInfo.n) cacheInfo.fibo = b;
             }
+            return b;
         }
-        return getLastFibo().fibo;
-    }
 
     public static class CacheInfo {
         public int n;
         public int fibo;
-        CacheInfo(int n, int fibo){
-            this.n = getLastFibo().n;
-            this.fibo = getLastFibo().fibo;
-        }
-        CacheInfo cacheInfo = new CacheInfo(1,0);
     }
 
     public static CacheInfo getLastFibo() {
@@ -32,7 +30,7 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(fiboNumber(10));
     }
 
 }
