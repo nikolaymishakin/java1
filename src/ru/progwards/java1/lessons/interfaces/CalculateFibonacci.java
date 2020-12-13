@@ -9,7 +9,7 @@ public class CalculateFibonacci {
                 c = a + b;
                 a = b;
                 b = c;
-                if (b != n) getLastFibo().fibo = getLastFibo().n;
+                if (b != n) getLastFibo().fibo = b;
             }
             return b;
         }
