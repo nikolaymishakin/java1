@@ -4,15 +4,24 @@ public class CalculateFibonacci {
     private static CacheInfo lastFibo;
 
     public static int fiboNumber (int n) {
-        int a = 0, b = 1, c;
-            for (int i = 2; i <= n; i++) {
-                c = a + b;
-                a = b;
-                b = c;
-                if ( b != n) lastFibo.fibo = n;
+        CacheInfo cacheInfo = new CacheInfo();
+        cacheInfo.n = 0;
+        cacheInfo.fibo = 0;
+        while (cacheInfo.n != n) {
+            if (cacheInfo.n == 0 || cacheInfo.n == 1) {
+                cacheInfo.fibo = 1;
+                cacheInfo.n++;
+            } else {
+                int a = 0, c;
+                for (int i = 2; i <= n; i++) {
+                    c = a + cacheInfo.fibo;
+                    a = cacheInfo.fibo;
+                    cacheInfo.fibo = c;
+                }
             }
-            return b;
         }
+        return cacheInfo.fibo;
+    }
 
     public static class CacheInfo {
         public int n;
