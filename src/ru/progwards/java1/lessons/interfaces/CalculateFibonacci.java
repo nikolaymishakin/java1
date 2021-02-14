@@ -8,12 +8,12 @@ public class CalculateFibonacci {
     public static int fiboNumber(int n) {
        CacheInfo cacheInfo = new CacheInfo(1,0);
         int i = 1, a, b = 1;
-        for (; i <= lastFibo.n; i++) {
+        for (; i <= cacheInfo.n; i++) {
             a = b;
-            b = lastFibo.fibo;
-            lastFibo.fibo = a + b;
+            b = cacheInfo.fibo;
+            cacheInfo.fibo = a + b;
         }
-        return lastFibo.fibo;
+        return cacheInfo.fibo;
     }
 
     public static class CacheInfo {
