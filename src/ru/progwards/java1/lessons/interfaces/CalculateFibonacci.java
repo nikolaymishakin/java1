@@ -3,24 +3,14 @@ package ru.progwards.java1.lessons.interfaces;
 public class CalculateFibonacci {
     private static CacheInfo lastFibo;
 
-    public static int fiboNumber (int n) {
-        CacheInfo cacheInfo = new CacheInfo();
-        cacheInfo.n = 0;
-        cacheInfo.fibo = 0;
-        while (cacheInfo.n != n) {
-            if (cacheInfo.n == 0 || cacheInfo.n == 1) {
-                cacheInfo.fibo = 1;
-                cacheInfo.n++;
-            } else {
-                int a = 0, c;
-                for (int i = 2; i <= n; i++) {
-                    c = a + cacheInfo.fibo;
-                    a = cacheInfo.fibo;
-                    cacheInfo.fibo = c;
-                }
-            }
+    public static int fiboNumber(int n) {
+        int i = 1, c = 0, a, b = 1;
+        for (; i <= n; i++) {
+            a = b;
+            b = c;
+            c = a + b;
         }
-        return cacheInfo.fibo;
+        return c;
     }
 
     public static class CacheInfo {
