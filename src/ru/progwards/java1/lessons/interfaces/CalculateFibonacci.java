@@ -8,8 +8,8 @@ public class CalculateFibonacci {
         if (n == lastFibo.fibo) return lastFibo.fibo;
         else {
             lastFibo.n = n;
-            int i = 1, c = 0, a, b = 1;
-            lastFibo.fibo = c;
+            int i = 1, a, b = 1;
+            lastFibo.fibo = 0;
             for (; i <= lastFibo.n; i++) {
                 a = b;
                 b = lastFibo.fibo;
