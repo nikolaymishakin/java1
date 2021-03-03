@@ -83,11 +83,15 @@ public class Animal implements FoodCompare, CompareWeight {
         return Double.compare(this.getFoodPrice(), aminal.getFoodPrice());
     }
 
+    public static void main(String[] args) {
+        Cow cow = new Cow(1);
+        Duck duck = new Duck(1);
+        Hamster hamster = new Hamster(1);
+        Animal[] animals = {cow, duck, hamster};
 
-
-        public static void main (String[]args){
-            var g = 16;
-        }
     }
+}
+
+
 
 
