@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public  class Animal implements FoodCompare, CompareWeight {
     public double weight;
+    static CompareResult [] a;
 
     public Animal(double weight) {
         this.weight = weight;
@@ -83,9 +84,19 @@ public  class Animal implements FoodCompare, CompareWeight {
         return Double.compare(this.getFoodPrice(), aminal.getFoodPrice());
     }
 
-
     public static void main(String[] args) {
 
+    }
+    public static void sort(CompareResult[] a){
+        for(int i = 0;i<a.length;i++) {
+            for (int j = 0; j < a.length; j++) {
+                if (a[j].compareTo(a[i])>0) {
+                    CompareResult tmp = a[i];
+                    a[i] = a[j];
+                    a[j] = tmp;
+                }
+            }
+        }
     }
 }
 
