@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public  class Animal implements FoodCompare, CompareWeight {
     public double weight;
-    static CompareResult [] a;
 
     public Animal(double weight) {
         this.weight = weight;
