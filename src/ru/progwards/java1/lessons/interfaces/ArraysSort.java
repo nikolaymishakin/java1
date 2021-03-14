@@ -3,10 +3,11 @@ package ru.progwards.java1.lessons.interfaces;
 public class ArraysSort {
 
     public static void sort(CompareWeight[] a) {
+        CompareWeight tmp;
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
                 if (a[i].compareWeight(a[j]) == CompareWeight.CompareResult.LESS) {
-                    CompareWeight tmp = a[i];
+                    tmp = a[i];
                     a[i] = a[j];
                     a[j] = tmp;
                 }

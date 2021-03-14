@@ -86,17 +86,7 @@ public  class Animal implements FoodCompare, CompareWeight {
     public static void main(String[] args) {
 
     }
-    public static void sort(CompareResult[] a){
-        for(int i = 0;i<a.length;i++) {
-            for (int j = 0; j < a.length; j++) {
-                if (a[j].compareTo(a[i])>0) {
-                    CompareResult tmp = a[i];
-                    a[i] = a[j];
-                    a[j] = tmp;
-                }
-            }
-        }
-    }
+
 }
 
 
