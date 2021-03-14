@@ -6,7 +6,7 @@ public class ArraySort {
         CompareWeight tmp;
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
-                if (a[i].compareWeight(a[j]) == CompareWeight.CompareResult.LESS) {
+                if (a[i].compareWeight(a[j]) == CompareWeight.CompareResult.GREATER) {
                     tmp = a[i];
                     a[i] = a[j];
                     a[j] = tmp;
