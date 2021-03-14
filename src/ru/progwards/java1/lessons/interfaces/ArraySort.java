@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.interfaces;
 
-public class ArraysSort {
+public class ArraySort {
 
     public static void sort(CompareWeight[] a) {
         CompareWeight tmp;
