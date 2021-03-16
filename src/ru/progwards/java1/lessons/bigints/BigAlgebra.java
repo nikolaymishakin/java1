@@ -8,7 +8,7 @@ public class BigAlgebra {
         BigDecimal a = new BigDecimal(String.valueOf(num));
         return BigDecimal.valueOf(a.pow(pow).doubleValue());
     }
-    BigInteger fibonacci(int n){
+    static BigInteger fibonacci(int n){
        if (n == 0 || n == 1) return BigInteger.ONE;
        return fibonacci(n - 2).add(fibonacci(n - 1));
     }
