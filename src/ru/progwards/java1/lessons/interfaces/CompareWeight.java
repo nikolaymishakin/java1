@@ -4,6 +4,7 @@ public interface CompareWeight {
     enum CompareResult {
         LESS, EQUAL, GREATER
     }
+
     CompareResult compareWeight(CompareWeight smthHasWeigt);
 
 }
