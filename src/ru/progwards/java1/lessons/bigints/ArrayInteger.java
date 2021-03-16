@@ -1,6 +1,5 @@
 package ru.progwards.java1.lessons.bigints;
 
-import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class ArrayInteger {
@@ -46,16 +45,16 @@ public class ArrayInteger {
         signif = sig;
     }
 
-    void fromInt(BigDecimal value) {
+    void fromInt(BigInteger value) {
         fromString(value.toString());
     }
 
-    BigDecimal toInt() {
+    BigInteger toInt() {
         char[] s = new char[signif];
         for (int i = signif - 1, k = 0; i >= 0; i--, k++) {
             s[i] = (char) ((digits[k] + '0') & 0xFF);
         }
-        return new BigDecimal(s);
+        return new BigInteger(String.valueOf(s));
     }
 
     boolean raiseCalcError() {
