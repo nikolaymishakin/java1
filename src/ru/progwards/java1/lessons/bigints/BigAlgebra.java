@@ -5,15 +5,25 @@ import java.math.BigInteger;
 
 public class BigAlgebra {
     static BigDecimal fastPow(BigDecimal num, int pow){
-        BigDecimal a = new BigDecimal(String.valueOf(num));
-        return BigDecimal.valueOf(a.pow(pow).doubleValue());
+        BigDecimal result = BigDecimal.ONE;
+        for (int i = 1; i <= pow; i++){
+            result = result.multiply(num);
+        }
+        return result;
     }
     static BigInteger fibonacci(int n){
-       if (n == 0 || n == 1) return BigInteger.ONE;
-       return fibonacci(n - 2).add(fibonacci(n - 1));
+        BigInteger a;
+        BigInteger b = BigInteger.ONE;
+        BigInteger c = BigInteger.ZERO;
+        for (int i = 1; i <= n; i++){
+            a = b;
+            b = c;
+            c = a.add(b);
+        }
+        return c;
     }
 
     public static void main(String[] args) {
-
+        System.out.println((fibonacci(38)));
     }
 }
