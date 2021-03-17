@@ -11,4 +11,9 @@ public class IntInteger extends AbsInteger {
     public String toString() {
         return Integer.toString(i);
     }
+
+    @Override
+    public int getValue() {
+        return Integer.valueOf(i);
+    }
 }

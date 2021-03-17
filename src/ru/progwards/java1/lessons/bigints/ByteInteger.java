@@ -12,5 +12,8 @@ public class ByteInteger extends AbsInteger {
         return Byte.toString(b);
     }
 
-
+    @Override
+    public int getValue() {
+        return Byte.valueOf(b);
+    }
 }
