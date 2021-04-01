@@ -32,7 +32,9 @@ public class CalculateFibonacci {
     }
 
     public static void main(String[] args) {
-
+        CacheInfo cacheInfo = new CacheInfo();
+        cacheInfo.n = 8;
+        System.out.println(fiboNumber(cacheInfo.n));
     }
 
 }

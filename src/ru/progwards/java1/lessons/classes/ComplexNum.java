@@ -6,8 +6,6 @@ public class ComplexNum {
         this.a=a;this.b=b;
     }
     public String toString(){
-        String string1=Integer.toString(a);
-        String string2=Integer.toString(b);
         return a+"+"+b+"i";
     }
      public ComplexNum add(ComplexNum num){

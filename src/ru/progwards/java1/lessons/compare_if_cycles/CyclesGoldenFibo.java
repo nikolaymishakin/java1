@@ -33,9 +33,9 @@ public class CyclesGoldenFibo {
 
     public static void main(String[] args) {
         int i = 0, j = 0;
-          for(i=1;i<=15;i++) {
-              System.out.println("Число"+i+" = "+fiboNumber(i));
-          }
+          //for(i=1;i<=15;i++) {
+             // System.out.println("Число"+i+" = "+fiboNumber(i));
+         // }
 
         for (i = 1; i <= 100; i++) {
             for (j = 1; j <= 100; j++) {
